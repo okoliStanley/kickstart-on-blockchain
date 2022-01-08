@@ -1,10 +1,12 @@
+import configData from '../config.json';
+
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 
 const provider = new HDWalletProvider(
-  '12 secret passphrase',
-    'network provider url such as infura' 
+  configData.SECRET_PHRASE,
+    configData.INFURA_URL
 );
 const web3 = new Web3(provider);
 
