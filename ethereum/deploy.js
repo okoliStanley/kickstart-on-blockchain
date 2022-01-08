@@ -3,8 +3,8 @@ const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 
 const provider = new HDWalletProvider(
-  'flame detail coconut scale color outdoor eyebrow skull develop attack rookie frog',
-    'https://rinkeby.infura.io/v3/26714b68a74e4e5f9685b14d0104ff95' 
+  '12 secret passphrase',
+    'network provider url such as infura' 
 );
 const web3 = new Web3(provider);
 
